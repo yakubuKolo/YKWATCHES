@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=360, initial-scale=1" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <a
+      href="index.html"
+      style="
+      margin-top: 1%;
+      margin-left: 3%;
+        margin-right: 80% ;
+        position: fixed;
+        font-weight: bold;
+        color: black;
+      "
+      class=""
+      ><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg></a
+    >
+    <section class="section">
+      <h2 class="text-center">Check Out</h2>
+      <div class="cart">
+
+
+        <input
+        class="form-control rounded-2 text-center"
+          type="tel"
+          placeholder="Phone Number"
+          name="Phone-Number"
+          id="phone-no"
+          onchange="handleChange(this.value, 'phoneNo')"
+        />
+    
+        <input
+        class="form-control rounded-2 text-center"
+          type="text"
+          placeholder="FULL NAME"
+          id="NAME"
+          name="FULL-NAME"
+          onchange="handleChange(this.value, 'NAME')"
+        />
+        <input
+        class="form-control rounded-2 text-center"
+          type="email"
+          placeholder="E-mail address"
+          id="email"
+          name="E-mail-address"
+          onchange="handleChange(this.value, 'email')"
+        />
+
+      
+
+        <select class="form-control rounded-2 text-center" id="stateSelect" onchange="countCartTotal(this.value, true)">
+          <option value="Select state">Select state</option>
+
+          <option value="Federal Capital Territory, Abuja">Federal Capital Territory, Abuja</option>
+
+
+      </select>
+
+      <input
+      class="form-control rounded-2 text-center"
+        type="text"
+        placeholder="Delivery address"
+        name="Delivery-address"
+        id="address"
+        onchange="handleChange(this.value, 'address')"
+      />
+      
+
+        <div id="total" style="display: flex; justify-content: space-between;">
+          <span id="sub"></span>
+          <span id="del"></span>
+          <span id="tot"></span>
+        </div>
+
+    
+ 
+           </div>
+         </div>
+         
+      </div>
+    </section>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="./otherPages.js"></script>
+  </body>
+</html>
